@@ -27,13 +27,4 @@ Deployed to AKS using Kubernetes deployment.yaml.
 ## CI/CD
 Automated CI/CD using GitHub Actions with Docker push and AKS deployment steps.
 
-## Issues Faced
-- Limited local debugging for AKS services.
-- Time taken to configure GitHub secrets for Docker Hub login.
 
----
-
-#### ✅ Final Commit
-```bash
-git add README.md
-git commit -m "Adding README.md"
