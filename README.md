@@ -19,12 +19,19 @@ A microservice for managing staff information at BestBuy. It provides RESTful CR
 | DELETE | `/staff/:id` | Delete staff |
 
 ## Docker Image
-[Docker Hub Link](https://hub.docker.com/r/yourdockerhubusername/bestbuy-staff-service)
+[Docker Hub Link](https://hub.docker.com/r/mohitsp21/staff-service)
 
 ## Deployment
 Deployed to AKS using Kubernetes deployment.yaml.
 
 ## CI/CD
 Automated CI/CD using GitHub Actions with Docker push and AKS deployment steps.
+
+## Issues Faced
+- kube config file was to long to reduce the size of config file i used 
+"kubectl config view --minify --raw > minimal_kubeconfig.yaml
+base64 -w 0 minimal_kubeconfig.yaml > kube_config_base64.txt" this command and it worked.
+- Time taken to configure GitHub secrets for Docker Hub login.
+
 
 
